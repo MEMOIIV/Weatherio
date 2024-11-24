@@ -1,0 +1,118 @@
+body{
+    --mainColor:#222831;
+    --secondColor:#31363F;
+    --ColorFour:#76ABAE;
+    background: var(--mainColor);
+}
+.sup{
+    font-family: cursive;
+    font-size: 2rem;
+    color: var(--ColorFour);
+    cursor: pointer;
+}
+.degre{
+    font-size: 3rem;
+    font-weight: 400;
+    margin-right: 15px;
+}
+.section1{
+    justify-content: space-between;
+    align-items: center;
+}
+.imgIco{
+    width: 100px;
+    margin: auto;
+}
+.status{
+position: relative;
+padding-left: 10px;
+}
+.status::after{
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 10px;
+    right: 10px;
+    height: 1px;
+    background-color: silver;
+}
+.butn {
+    background-color: var(--ColorFour) ;
+    padding: 7px 15px;
+    transition: 0.3s ease-in-out all;
+    display: block;
+    color: white;
+}
+.butn:hover {
+    background-color: var(--ColorFour) ;
+    color: var(--ColorThree);
+}
+input::placeholder{
+    padding-left: 0px;
+}
+.icM_search {
+    display:block;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    background-color: var(--ColorFour) ;
+    cursor: pointer;
+    color: #ffffff;
+    margin-left: 7px;
+    transition: all ease-in 0.4s;
+}
+.icM_search:hover{
+    color: var(--ColorThree);
+}
+.lol{
+    background-color: var(--secondColor);
+}
+.iconSun{
+    width: 35px;
+}
+@media  screen and (min-width: 481px) and (max-width: 781px) {
+    .butn{
+        display: none;
+    }
+    .icM_search {
+        display:block;
+        border-radius: 50%;
+        width: 30px;
+        height: 30px;
+        background-color: var(--ColorFour) ;
+        cursor: pointer;
+        color: #131214;
+        transition: all ease-in-out 0.3s;
+    }
+    .icM_search , :hover {
+        color: #ffffff;
+    }
+    .sup{
+        font-family: cursive;
+        font-size: 1.2rem;
+    }
+    .imgIco{
+        width: 150px;
+    }
+    .degre{
+        margin-left: auto;
+    }
+
+}
+@media  screen and (min-width: 781px) and (max-width: 1024px) {
+    .sup{
+        font-family: cursive;
+        font-size: 1.4rem;
+        
+    }
+    .imgIco{
+        width: 150px;
+    }
+    .degre{
+        margin-left: auto;
+    }
+}
+
+.colorSections{
+    background-color: var(--ColorThree);
+}

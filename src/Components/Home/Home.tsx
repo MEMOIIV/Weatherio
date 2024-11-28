@@ -170,6 +170,7 @@ async function gitNameCity() {
     gitNameCity();
     forecastResponse();
     forecastRe();
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [city]);
 
   const uniqueDates = new Set();
